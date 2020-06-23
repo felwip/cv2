@@ -1,18 +1,21 @@
 <template>
   <div class="home">
-    <h1>Felix</h1>
+    <h1>Welcome</h1>
     <img alt="Vue logo" src="../assets/logo.png" />
+    <Bar />
     <Tech />
   </div>
 </template>
 
 <script>
 import Tech from "@/components/Tech.vue";
+import Bar from "@/components/Icon-Bar.vue";
 
 export default {
   name: "Home",
   components: {
-    Tech
+    Tech,
+    Bar
   }
 };
 </script>
