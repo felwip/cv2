@@ -1,8 +1,8 @@
 <template>
   <div>
     <div class="icon-bar">
-      <img src="../../src/assets/pictures/portrait.jpeg" />
-      <img src="../../src/assets/pictures/CodeCampLeipzig.jpg" />
+      <img src="../../src/assets/pictures/portrait.jpeg" alt=" " />
+      <img src="../../src/assets/pictures/CodeCampLeipzig.jpg" alt=" " />
       <img src="../../src/assets/pictures/bike.jpg" />
       <img src="../../src/assets/pictures/rocketbean.jpg" />
       <img src="../../src/assets/pictures/amateur.jpg" />
@@ -17,15 +17,20 @@ export default {};
 <style scoped>
 .icon-bar {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: line-through;
 }
 
 img {
-  width: 100px;
-  height: 100px;
+  width: 8rem;
+  height: 8rem;
+  overflow: hidden;
   object-fit: cover;
+  border: 0.2px solid var(--dark-beige);
   border-radius: 50%;
   transition: transform 0.3s;
+  margin: 2rem;
 }
 
 img:hover {
